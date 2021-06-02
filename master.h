@@ -1,8 +1,8 @@
 ﻿#ifndef		MASTER_H_
 #define		MASTER_H_
 #define		F_CPU						16000000UL
-#define		MYUBRR F_CPU/16/BAUD-1			 //UBRR 계산
-#define		BAUD						9600 //9600bfs 설정
+#define		MYUBRR F_CPU/16/BAUD-1			 //Calcultate UBRR 
+#define		BAUD						9600 //set 9600bfs
 #define		BLOCKED						1
 #define		OPEN_ROAD					-1
 #define		MY_DIRECTION				0
