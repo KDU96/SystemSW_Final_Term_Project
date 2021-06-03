@@ -1,7 +1,7 @@
 ﻿#ifndef		MASTER_H_
 #define		MASTER_H_
 #define		F_CPU						16000000UL
-#define		MYUBRR F_CPU/16/BAUD-1			 //Calcultate UBRR 
+#define		MYUBRR						F_CPU/16/BAUD-1			 //Calcultate UBRR 
 #define		BAUD						9600 //set 9600bfs
 #define		BLOCKED						1
 #define		OPEN_ROAD					-1
@@ -38,9 +38,9 @@ int isRotateLeft;
 int frontSensorData;
 int rearSensorData;
 volatile unsigned char flag;
-int flagBuffer[4];
-unsigned int msec;
-unsigned int sec;
+int flagBuffer[4];	//global variable for communication between the functions
+unsigned int msec;	//the variable for milisecond
+unsigned int sec;	//the variable for second
 /*****************************************************************************
 							Task1 Function
 ******************************************************************************/
